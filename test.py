@@ -17,9 +17,14 @@ def is_substr(find, data):
             return False
     return True
 
-print (long_substr([sys.argv[1],
-    sys.argv[2],
-    sys.argv[3]]))
+# for param in sys.argv:
+#         mas = []
+#         mas =[param]
+print (sys.argv[1:] )
+print (long_substr(sys.argv))
+# print (long_substr([sys.argv[1],
+#     sys.argv[2],
+#     sys.argv[3]]))
 # print (long_substr(['Oh, hello, hhhhh my friend.',
 #                    'I prefer Jelly Belly beans. hhhhh',
 #                    'When hell freezes ovhhhhher!']))
