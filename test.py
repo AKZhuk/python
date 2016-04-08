@@ -1,5 +1,4 @@
 import sys
-
 def long_substr(data):
     substr = ''
     if len(data) > 1 and len(data[0]) > 0:
@@ -8,7 +7,6 @@ def long_substr(data):
                 if j > len(substr) and is_substr(data[0][i:i+j], data):
                     substr = data[0][i:i+j]
     return substr
-
 def is_substr(find, data):
     if len(data) < 1 and len(find) < 1:
         return False
@@ -16,15 +14,4 @@ def is_substr(find, data):
         if find not in data[i]:
             return False
     return True
-
-# for param in sys.argv:
-#         mas = []
-#         mas =[param]
-print (sys.argv[1:] )
-print (long_substr(sys.argv))
-# print (long_substr([sys.argv[1],
-#     sys.argv[2],
-#     sys.argv[3]]))
-# print (long_substr(['Oh, hello, hhhhh my friend.',
-#                    'I prefer Jelly Belly beans. hhhhh',
-#                    'When hell freezes ovhhhhher!']))
+print (long_substr(sys.argv[1:]))
